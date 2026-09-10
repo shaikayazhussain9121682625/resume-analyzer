@@ -1,4 +1,4 @@
-﻿from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
+from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
@@ -31,7 +31,8 @@ CORS(
     supports_credentials=True,
     origins=[
         "http://localhost:5173",
-        "http://127.0.0.1:5173"
+        "http://127.0.0.1:5173",
+        "https://resume-analyzer-azure-seven.vercel.app"
     ]
 )
 
@@ -1692,3 +1693,5 @@ if __name__ == "__main__":
         host="127.0.0.1",
         port=5000
     )
+
+
