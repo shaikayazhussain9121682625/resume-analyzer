@@ -1,0 +1,293 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.menu {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  overflow-x: hidden;
+}
+
+.menu nav {
+  width: 100%;
+  padding: 18px 6%;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.menu .nav__header {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.menu .nav__logo img {
+  width: 145px;
+  display: block;
+}
+
+.menu .nav__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu .nav__links li {
+  list-style: none;
+}
+
+.menu .nav__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+
+  text-decoration: none;
+  color: #333;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.25s ease;
+}
+
+.menu .nav__links a:hover {
+  color: #5550fa;
+  background: #f4f3ff;
+}
+
+.menu .nav__links .btnLogin {
+  color: #5550fa;
+  border: 1px solid #5550fa;
+}
+
+.menu .nav__links .btnLogin:hover {
+  color: white;
+  background: #5550fa;
+}
+
+.menu > .container {
+  width: calc(100% - 40px);
+  max-width: 850px;
+
+  margin: 45px auto;
+  padding: 40px 50px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.12);
+
+  overflow: hidden;
+}
+
+.menu > .container h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  text-align: center;
+
+  background: linear-gradient(
+    90deg,
+    #d414d9,
+    #5550fa
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu > .container form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu > .container label {
+  display: block;
+
+  margin: 18px 0 7px;
+
+  color: #444;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.menu > .container input {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+
+  background: #ffffff;
+
+  transition: 0.25s ease;
+}
+
+.menu > .container input:focus {
+  border-color: #5550fa;
+
+  box-shadow:
+    0 0 0 3px rgba(85, 80, 250, 0.12);
+}
+
+.menu > .container button {
+  width: 100%;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #5550fa,
+    #a633e6
+  );
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.menu > .container button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(85, 80, 250, 0.25);
+}
+
+.menu > .container button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.menu > .container p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.menu > .container p a {
+  color: #5550fa;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu > .container p a:hover {
+  text-decoration: underline;
+}
+
+.flashes {
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  background: #fff0f0;
+}
+
+@media (max-width: 700px) {
+
+  .menu nav {
+    padding: 12px 20px;
+  }
+
+  .menu .nav__header {
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 14px;
+  }
+
+  .menu .nav__logo img {
+    width: 125px;
+  }
+
+  .menu .nav__links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu .nav__links a {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .menu > .container {
+    width: calc(100% - 24px);
+    margin: 25px auto;
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .menu > .container h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .menu > .container {
+    padding: 25px 16px;
+  }
+
+  .menu > .container h2 {
+    font-size: 30px;
+  }
+
+  .menu > .container input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .menu > .container button {
+    padding: 13px;
+    font-size: 15px;
+  }
+}

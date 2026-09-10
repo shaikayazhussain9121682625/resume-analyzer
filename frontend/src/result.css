@@ -1,0 +1,307 @@
+﻿/* ============================================================
+   RESUME RESULT PAGE
+   Simple • Clean • Unique • Responsive
+   ============================================================ */
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 40px 22px 60px;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #202124;
+}
+
+/* Main heading */
+
+.container > h1 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #202124;
+}
+
+/* ============================================================
+   SCORE AREA
+   ============================================================ */
+
+.scores-box {
+  width: 100%;
+}
+
+/* Score circle */
+
+.total-score-circle {
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-score-circle svg {
+  display: block;
+}
+
+.total-score-circle .bg {
+  stroke: #e8e8ed;
+}
+
+.total-score-circle .progress {
+  stroke: #5550fa;
+}
+
+.score-text {
+  font-size: 27px;
+  font-weight: 600;
+  fill: #202124;
+}
+
+/* ============================================================
+   EXTRACTED INFORMATION
+   ============================================================ */
+
+.extracted-resume-box {
+  width: 100%;
+  margin: 0 auto 35px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e4e5ea;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.extracted-resume-box h2 {
+  margin: 0 0 22px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  color: #202124;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Contact information */
+
+.extracted-resume-box > div {
+  width: 100%;
+}
+
+.extracted-resume-box h3 {
+  margin: 18px 0 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5550fa;
+}
+
+.extracted-resume-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Lists */
+
+.extracted-resume-box ul {
+  margin: 7px 0 14px;
+  padding-left: 20px;
+}
+
+.extracted-resume-box li {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* ============================================================
+   ANALYSIS CARDS
+   ============================================================ */
+
+.results-list {
+  width: 100%;
+}
+
+.category-box {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e6eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.category-box h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.category-box p {
+  margin: 5px 0 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Progress */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  margin: 12px 0 20px;
+  background: #eeeeF2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #5550fa;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+/* Issues / tips / suggestions */
+
+.category-box h4 {
+  margin: 18px 0 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.category-box ul {
+  margin: 5px 0 12px;
+  padding-left: 20px;
+}
+
+.category-box li {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #555;
+}
+
+/* ============================================================
+   YOUTUBE SECTION
+   ============================================================ */
+
+.youtube-links {
+  margin-top: 28px;
+}
+
+.youtube-links h3 {
+  font-size: 18px;
+}
+
+.youtube-links a {
+  color: #5550fa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.youtube-links a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 11px 20px;
+  border: 1px solid #5550fa;
+  border-radius: 8px;
+  background: #5550fa;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background: #4540d8;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .container {
+    padding: 28px 15px 45px;
+  }
+
+  .container > h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .total-score-circle {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 25px;
+  }
+
+  .total-score-circle svg {
+    width: 160px;
+    height: 160px;
+  }
+
+  .extracted-resume-box,
+  .category-box {
+    padding: 19px;
+    border-radius: 12px;
+  }
+
+  .extracted-resume-box h2 {
+    font-size: 19px;
+  }
+
+  .category-box h3 {
+    font-size: 17px;
+  }
+
+  .button {
+    margin-left: 0 !important;
+    margin-right: 7px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .container > h1 {
+    font-size: 21px;
+  }
+
+  .extracted-resume-box h2 {
+    font-size: 18px;
+  }
+
+  .category-box {
+    padding: 16px;
+  }
+
+  .category-box li,
+  .extracted-resume-box li,
+  .extracted-resume-box p {
+    font-size: 13px;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    margin: 10px 0 !important;
+    text-align: center;
+  }
+}
