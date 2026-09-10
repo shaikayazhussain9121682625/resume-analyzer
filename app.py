@@ -55,7 +55,8 @@ os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
 # Session
 app.permanent_session_lifetime = timedelta(days=7)
-app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
+app.config["SESSION_COOKIE_SAMESITE"] = "None"
+app.config["SESSION_COOKIE_SECURE"] = True
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 
 db = SQLAlchemy(app)
@@ -1693,5 +1694,6 @@ if __name__ == "__main__":
         host="127.0.0.1",
         port=5000
     )
+
 
 
